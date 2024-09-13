@@ -71,7 +71,7 @@
     columns: 3;
     background-color: hwb(0 100% 15%);
     width: 83%;
-    height: 120vh;
+    height: 780px;
     position: absolute;
     top: 0;
     right: 0;
@@ -139,9 +139,8 @@
     align-content: center;
     translate: 15px 0;
 }
-.emplayees-page .work-total div{
-    padding: 10px;
-}
+/* Total Eork And Experience */
+
 .emplayees-page .work-total{
     background-color: transparent;
     grid-area: total;
@@ -149,10 +148,16 @@
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: repeat(2, 1fr);
     grid-template-areas: "days completed"
-                        "progress salary";
+    "progress salary";
     color: #fff;
+    height: 200px;
+}
+.emplayees-page .work-total div{
+    padding: 10px;
 }
 .emplayees-page .work-total .total-days{
+    position: relative;
+    gap: 10px;
     grid-area: days;
     background-color: hwb(351 44% 0%);
 }
@@ -160,10 +165,10 @@
     font-weight: 350;
     display: inline-flex;
     font-size: 2em;
+    margin-left: 10px;
     flex-wrap: wrap;
-    margin: 0 5px 0 0;
 } 
-.emplayees-page .work-total span{
+.emplayees-page .work-total .lil-span{
     font-size: .85em;
     font-weight: 300;
 }
@@ -172,19 +177,37 @@
 }
 
 .emplayees-page .work-total .total-projects-completed{
+    position: relative;
+    gap: 10px;
     grid-area: completed;
     background-color: hwb(120 0% 20%);
 }
 
 .emplayees-page .work-total .total-projects-progress{
+    position: relative;
+    gap: 10px;
     grid-area: progress;
     background-color: #2f2fe0;
 }
 
 .emplayees-page .work-total .total-salary{
+    position: relative;
     grid-area: salary;
-    background-color: hsl(0, 87%, 47%);
+    gap: 10px;
+    background-color: hsl(9, 98%, 48%);
 }
+.emplayees-page .work-total .lil-content{
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 10px;
+    font-size: 1.1em;
+    translate: 0 15px;
+}
+.emplayees-page .work-total i{
+    font-size: 1.05em;
+}
+
 
 
 
