@@ -1,0 +1,214 @@
+*{
+    font-family: kanit, "sans serif";
+    padding: 0;
+    margin: 0;
+    /* overflow:hidden; */
+}
+.allPage{
+    max-width: 100%;
+}
+.allPage .header h2{
+    font-weight: 450;
+    text-align: center;
+    padding: 15px;
+}
+.container ul li{
+    list-style: none;
+    padding: 10px 7px;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    width: 70%;
+    margin: 0 auto;
+    z-index: 9;
+    &:hover{
+        color: #fff;
+        background-color: #1b1bff;
+    }
+}
+.allPage .container{
+    border-right: solid 2px hwb(0 100% 20%);
+    width: 17%;
+    height: 100vh;
+    background-color: #fff;
+    position: fixed;
+    left: 0;
+    font-size: 14px;
+    font-weight: 500;
+    z-index: 9;
+}
+.listes ul a{
+    text-decoration: none;
+    color: #000;
+}
+.listes .members-list li{
+    text-align: center;
+    background-color: #e4dbdb;
+    border-radius: 10px;
+    margin: 15px auto;
+    justify-content: space-around;
+    &:hover{
+        background-color: #c4c4c4;
+        color: #000;
+    }
+}
+.listes #selected-liste{
+    color: #fff;
+    background-color: #1b1bff;
+}
+.content, .arrows, label{
+    transform: translateX(10px);
+}
+#last-childs{
+    translate: -10px 185px;
+}
+#listes-content{
+    transform: translateX(10px);
+    display: none;
+    width: 90%;
+}
+.emplayees-page{
+    columns: 3;
+    background-color: hwb(0 100% 15%);
+    width: 83%;
+    height: 120vh;
+    position: absolute;
+    top: 0;
+    right: 0;
+    padding: 20px;
+    overflow: hidden;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    grid-template-areas: "details activity workingformat"
+                        "details tracking timemanagement"
+                        "total premiumbox timemanagement";
+}
+.emplayees-page .person-details{
+    grid-area: details;
+    background-color: #fff;
+    padding: 10px;
+    display: inline-flex;
+    flex-direction: column;
+    padding: 15px;
+    position: relative;
+}
+.emplayees-page .person-details img{
+    border-radius: 15px;
+    margin: 0 auto;
+}
+.emplayees-page .person-details .about-me{
+    display: inline-flex;
+    flex-direction: column;
+    margin: 10px 0 0 10px;
+}
+.emplayees-page .person-details .about-me .property{
+    color: hwb(0 80% 70%);
+    font-size: .80rem;
+    margin-top: 7px;
+}
+.emplayees-page .person-details .about-me #property{
+    font-weight: 500;
+    font-size: 1.1rem;
+}
+.emplayees-page .person-details .about-me h1{
+    font-weight: 500;
+    width: 200px;
+    transform: translateX(5px);
+}
+.emplayees-page .person-details .about-me .icons1{
+    width: 80px;
+    border-radius: 0;
+    text-align: center;
+    translate: 220px -25px;
+}
+.emplayees-page .person-details .about-me .icons1 a i{
+    color: #1b1bff;
+    scale: 1.9;
+    padding: 5px;
+}
+.emplayees-page .person-details .about-me .icons1 #i2{
+    background-color: #1b1bff;
+    color: #fff;
+    border-radius: 50%;
+    padding: 9px 10px 10px 7px;
+    width: 5px;
+    height: 3px;
+    scale: 1.65;
+    text-align: center;
+    align-content: center;
+    translate: 15px 0;
+}
+.emplayees-page .work-total div{
+    padding: 10px;
+}
+.emplayees-page .work-total{
+    background-color: transparent;
+    grid-area: total;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    grid-template-areas: "days completed"
+                        "progress salary";
+    color: #fff;
+}
+.emplayees-page .work-total .total-days{
+    grid-area: days;
+    background-color: hwb(351 44% 0%);
+}
+.emplayees-page .work-total  h2{
+    font-weight: 350;
+    display: inline-flex;
+    font-size: 2em;
+    flex-wrap: wrap;
+    margin: 0 5px 0 0;
+} 
+.emplayees-page .work-total span{
+    font-size: .85em;
+    font-weight: 300;
+}
+.emplayees-page .work-total svg{
+    color: #fff;
+}
+
+.emplayees-page .work-total .total-projects-completed{
+    grid-area: completed;
+    background-color: hwb(120 0% 20%);
+}
+
+.emplayees-page .work-total .total-projects-progress{
+    grid-area: progress;
+    background-color: #2f2fe0;
+}
+
+.emplayees-page .work-total .total-salary{
+    grid-area: salary;
+    background-color: hsl(0, 87%, 47%);
+}
+
+
+
+.emplayees-page .weekly-activity{
+    grid-area: activity;
+    background-color: #fff;
+}
+.emplayees-page .time-tracking{
+    grid-area: tracking;
+    background-color: #fff;
+}
+.emplayees-page .premiumbox{
+    grid-area: premiumbox;
+    background-color: #fff;
+}
+.emplayees-page .working-format{
+    grid-area: workingformat;
+    background-color: #fff;
+}
+.emplayees-page .dates-management {
+    grid-area: timemanagement;
+    background-color: #fff;
+}
+.emplayees-page div{
+    margin: 5px;
+    border-radius: 17px;
+}
