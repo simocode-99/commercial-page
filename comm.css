@@ -110,9 +110,10 @@
 }
 .emplayees-page .person-details .about-me #property{
     font-weight: 500;
-    font-size: 1.1rem;
+    font-size: 1.05rem;
 }
 .emplayees-page .person-details .about-me h1{
+    font-size: 1.8em;
     font-weight: 500;
     width: 200px;
     transform: translateX(5px);
@@ -229,11 +230,11 @@
     grid-area: activity;
     background-color: #fff;
     position: relative;
+    padding: 10px;
 }
 .emplayees-page .weekly-activity .chart-box{
     background-color: green;
     margin: 0 auto;
-    margin-top: 10px;
     width: 90%;
     height: 120px;
     text-align: center;
@@ -242,23 +243,52 @@
     font-size: 1.7em;
 }
 .emplayees-page .weekly-activity img{
-    background-color: #d6d6d6;
+    background-color: #dbdbdb;
     padding: 5px;
     border-radius: 40px;
     display: flex;
-    transform: translateX(calc((var(--i) * 2) * -10px));
+    transform: translateX(calc((var(--i) * 2) * -15px));
     margin-left: 10px;
 }
+.emplayees-page .weekly-activity .developement-box{
+    height: 100px;
+    translate: 0 7px;
+}
 .emplayees-page .weekly-activity .developement{
-    border: solid black;
+    border: none;
     padding: 10px;
     display: flex;
-    justify-content: space-evenly;
+    justify-content: space-between;
+    align-items: center;
+    translate: 0 7px;
+    margin-left: 20px;
 }
 .emplayees-page .weekly-activity .serching{
-    border: solid black;
+    border: none;
     padding: 10px;
     display: flex;
+    justify-content: space-between;
+    align-items: center;
+    order: 3;
+    translate: 0 -10px;
+    margin-left: 7px;
+}
+.emplayees-page .weekly-activity .or-span1{
+    translate: -70px 0;
+    font-size: .85em;
+}
+.emplayees-page .weekly-activity .or-span2{
+    translate: -50px 0;
+    font-size: .85em;
+}
+.emplayees-page .weekly-activity hr{
+    color: rgb(165, 165, 165);
+    width: 90%;
+    border: solid 1px rgb(185, 185, 185);
+    margin: 0 auto;
+}
+.emplayees-page .weekly-activity .myspan {
+    color: hwb(0 73% 47%);
 }
 
 
