@@ -12,3 +12,4 @@ myLink.addEventListener('click', event => {
         listesContent.style.display = 'none';
     }
 })
+

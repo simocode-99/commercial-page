@@ -96,6 +96,7 @@
 .emplayees-page .person-details img{
     border-radius: 15px;
     margin: 0 auto;
+    margin-top: 5px;
 }
 .emplayees-page .person-details .about-me{
     display: inline-flex;
@@ -131,6 +132,13 @@
     padding: 5px;
     scale: 1.4;
     gap: 10px;
+    &:hover{
+        background-color: #1b1bfd;
+        box-shadow: 1px 1px 20px 4px #1b1bfd;
+    }
+    &:active{
+        background-color: #0101be;
+    }
 }
 .emplayees-page .person-details .about-me .icons1 #i2{
     background-color: #1b1bff;
@@ -159,6 +167,7 @@
 }
 .emplayees-page .work-total div{
     padding: 10px;
+    gap: 10px;
 }
 .emplayees-page .work-total .total-days{
     position: relative;
@@ -171,11 +180,12 @@
     display: inline-flex;
     font-size: 2em;
     margin-left: 10px;
+    margin-right: 5px;
     flex-wrap: wrap;
 } 
-.emplayees-page .work-total .lil-span{
+.emplayees-page .work-total span{
     font-size: .85em;
-    font-weight: 300;
+    font-weight: 200;
 }
 .emplayees-page .work-total svg{
     color: #fff;
@@ -205,7 +215,6 @@
     display: flex;
     align-items: center;
     justify-content: flex-start;
-    gap: 10px;
     font-size: 1.1em;
     translate: 0 15px;
 }
@@ -214,12 +223,47 @@
 }
 
 
-
+/* weekly acrivity */
 
 .emplayees-page .weekly-activity{
     grid-area: activity;
     background-color: #fff;
+    position: relative;
 }
+.emplayees-page .weekly-activity .chart-box{
+    background-color: green;
+    margin: 0 auto;
+    margin-top: 10px;
+    width: 90%;
+    height: 120px;
+    text-align: center;
+}
+.emplayees-page .weekly-activity .chart-box h1{
+    font-size: 1.7em;
+}
+.emplayees-page .weekly-activity img{
+    background-color: #d6d6d6;
+    padding: 5px;
+    border-radius: 40px;
+    display: flex;
+    transform: translateX(calc((var(--i) * 2) * -10px));
+    margin-left: 10px;
+}
+.emplayees-page .weekly-activity .developement{
+    border: solid black;
+    padding: 10px;
+    display: flex;
+    justify-content: space-evenly;
+}
+.emplayees-page .weekly-activity .serching{
+    border: solid black;
+    padding: 10px;
+    display: flex;
+}
+
+
+
+
 .emplayees-page .time-tracking{
     grid-area: tracking;
     background-color: #fff;
