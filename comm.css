@@ -60,7 +60,10 @@
     transform: translateX(10px);
 }
 #last-childs{
-    translate: -10px 185px;
+    translate: -10px 0;
+    position: fixed;
+    bottom: 10px;
+    min-width: 17%;
 }
 #listes-content{
     transform: translateX(10px);
@@ -140,6 +143,7 @@
     &:active{
         background-color: #0101be;
     }
+    translate: 10px -5px;
 }
 .emplayees-page .person-details .about-me .icons1 #i2{
     background-color: #1b1bff;
@@ -151,7 +155,6 @@
     scale: 1.65;
     text-align: center;
     align-content: center;
-    translate: 15px 0;
 }
 /* Total Eork And Experience */
 
