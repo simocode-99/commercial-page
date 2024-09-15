@@ -284,23 +284,93 @@
     translate: -50px 0;
     font-size: .85em;
 }
-.emplayees-page .weekly-activity hr{
+.emplayees-page hr{
     color: rgb(165, 165, 165);
     width: 90%;
     border: solid 1px rgb(185, 185, 185);
     margin: 0 auto;
 }
 .emplayees-page .weekly-activity .myspan {
-    color: hwb(0 73% 47%);
+    color: #9b9b9b;
 }
 
-
-
+/* Time Tracking Box */
 
 .emplayees-page .time-tracking{
     grid-area: tracking;
     background-color: #fff;
+    padding: 10px 10px 0 10px;
+    height: 255px;
+    overflow: hidden;
 }
+.emplayees-page .time-tracking .myH2{
+    font-size: 1.15rem;
+    margin: 5px;
+}
+.emplayees-page .time-tracking .time-box{
+    width: 95%;
+    margin: 0 auto;
+    padding: 10px 20px;
+    height: 80px;
+    background-color: rgba(211, 211, 211, 0.7);
+    position: relative;
+}
+.emplayees-page .time-tracking .myP1{
+    font-size: .9em;
+    color: hwb(0 61% 50%);
+}
+.emplayees-page .time-tracking .time-box i{
+    position: absolute;
+    right: 20px;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 2rem;
+    color: #fff;
+    background-color: #2f2fe0;
+    border-radius: 15px;
+    padding: 5px;
+}
+.emplayees-page .time-tracking .time-box h1{
+    font-size: 2rem;
+    font-weight: 300;
+}
+.emplayees-page .time-tracking .ui-boxes{
+    margin-top: 10px;
+}
+.emplayees-page .time-tracking .ui-boxes img{
+    background-color: #dbdbdb;
+    padding: 7.5px;
+    border-radius: 50%;
+}
+.emplayees-page .time-tracking .ui-boxes .ui1{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 5px 0;
+}
+.emplayees-page .time-tracking .ui-boxes .ui1 i, .ui2 i{
+    font-size: 1.1em;
+}
+.emplayees-page .time-tracking .ui-boxes .ui2{
+    position: relative;
+    bottom: -10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 5px 0;
+    opacity: .5;
+    background-image: linear-gradient(to bottom, transparent, #fff);
+}
+.emplayees-page .time-tracking .ui-boxes .ui1 p{
+    translate: -55px 0;
+    font-weight: 450;
+}
+.emplayees-page .time-tracking .ui-boxes .ui2 p{
+    translate: -67px 0;
+    font-weight: 450;
+}
+
+
 .emplayees-page .premiumbox{
     grid-area: premiumbox;
     background-color: #fff;
