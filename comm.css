@@ -74,7 +74,7 @@
     columns: 3;
     background-color: hwb(0 100% 15%);
     width: 83%;
-    height: 780px;
+    height: 830px;
     position: absolute;
     top: 0;
     right: 0;
@@ -156,10 +156,9 @@
     text-align: center;
     align-content: center;
 }
-/* Total Eork And Experience */
+/* Total Work And Experience */
 
 .emplayees-page .work-total{
-    background-color: transparent;
     grid-area: total;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
@@ -167,17 +166,20 @@
     grid-template-areas: "days completed"
     "progress salary";
     color: #fff;
-    height: 200px;
+    height: 250px;
+    padding: 0;
 }
 .emplayees-page .work-total div{
     padding: 10px;
     gap: 10px;
+    box-sizing: border-box;
 }
 .emplayees-page .work-total .total-days{
     position: relative;
     gap: 10px;
     grid-area: days;
     background-color: hwb(351 44% 0%);
+    height: 115px;
 }
 .emplayees-page .work-total  h2{
     font-weight: 350;
@@ -188,7 +190,7 @@
     flex-wrap: wrap;
 } 
 .emplayees-page .work-total span{
-    font-size: .85em;
+    font-size: .9em;
     font-weight: 200;
 }
 .emplayees-page .work-total svg{
@@ -200,6 +202,7 @@
     gap: 10px;
     grid-area: completed;
     background-color: hwb(120 0% 20%);
+    height: 115px;
 }
 
 .emplayees-page .work-total .total-projects-progress{
@@ -207,6 +210,7 @@
     gap: 10px;
     grid-area: progress;
     background-color: #2f2fe0;
+    height: 115px;
 }
 
 .emplayees-page .work-total .total-salary{
@@ -214,13 +218,14 @@
     grid-area: salary;
     gap: 10px;
     background-color: hsl(9, 98%, 48%);
+    height: 115px;
 }
 .emplayees-page .work-total .lil-content{
     display: flex;
     align-items: center;
     justify-content: flex-start;
     font-size: 1.1em;
-    translate: 0 15px;
+    translate: 0 10px;
 }
 .emplayees-page .work-total i{
     font-size: 1.05em;
@@ -234,6 +239,7 @@
     background-color: #fff;
     position: relative;
     padding: 10px;
+    height: 250px;
 }
 .emplayees-page .weekly-activity .chart-box{
     background-color: green;
@@ -300,7 +306,7 @@
     grid-area: tracking;
     background-color: #fff;
     padding: 10px 10px 0 10px;
-    height: 255px;
+    height: 250px;
     overflow: hidden;
 }
 .emplayees-page .time-tracking .myH2{
@@ -311,12 +317,12 @@
     width: 95%;
     margin: 0 auto;
     padding: 10px 20px;
-    height: 80px;
+    height: 75px;
     background-color: rgba(211, 211, 211, 0.7);
     position: relative;
 }
 .emplayees-page .time-tracking .myP1{
-    font-size: .9em;
+    font-size: .8em;
     color: hwb(0 61% 50%);
 }
 .emplayees-page .time-tracking .time-box i{
@@ -374,6 +380,7 @@
 .emplayees-page .premiumbox{
     grid-area: premiumbox;
     background-color: #fff;
+    height: 250px;
 }
 .emplayees-page .working-format{
     grid-area: workingformat;
