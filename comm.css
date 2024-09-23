@@ -476,12 +476,21 @@
     font-weight: 300;
 }
 
-
+/* Dates Management Box */
 
 .emplayees-page .dates-management {
     grid-area: timemanagement;
     background-color: #fff;
+    display: flex;
 }
+
+
+
+
+
+
+
+
 .emplayees-page div{
     margin: 5px;
     border-radius: 17px;
